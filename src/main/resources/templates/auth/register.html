@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký Tài Khoản</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0b0f1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .register-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 24px;
+            font-weight: bold;
+        }
+
+        input[type="text"], input[type="password"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+
+        .birth-date {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .birth-date input {
+            width: 30%;
+        }
+
+        button {
+            width: 100%;
+            background-color: #ff4b5c;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 12px;
+        }
+
+        button:hover {
+            background-color: #ff2e46;
+        }
+
+        .register-link, .login-link {
+            margin-top: 10px;
+            color: #ff4b5c;
+        }
+
+        .register-link:hover, .login-link:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .social-login button {
+            background-color: #f1f1f1;
+            border: none;
+            border-radius: 50%;
+            padding: 12px;
+            cursor: pointer;
+        }
+
+        .social-login button img {
+            width: 20px;
+            height: 20px;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #aaa;
+        }
+
+        .footer a {
+            color: #ff4b5c;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="register-container">
+    <h1>Đăng Ký Tài Khoản</h1>
+
+    <!-- Form đăng ký -->
+    <form>
+        <input type="text" placeholder="Email hoặc số điện thoại" required>
+        <input type="text" placeholder="Tên đăng nhập" required>
+        <input type="password" placeholder="Mật Khẩu" required>
+        <input type="text" placeholder="Họ và Tên" required>
+
+        <!-- Ngày sinh -->
+        <div class="birth-date">
+            <input type="text" placeholder="Ngày">
+            <input type="text" placeholder="Tháng">
+            <input type="text" placeholder="Năm">
+        </div>
+
+        <input type="text" placeholder="Giới Tính" required>
+
+        <button type="submit">Đăng Ký</button>
+    </form>
+
+    <!-- Đã có tài khoản -->
+    <p>Bạn đã có tài khoản? <a href="#" class="login-link">Đăng Nhập</a></p>
+
+
+</div>
+
+</body>
+</html>
