@@ -1,0 +1,109 @@
+
+.container {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-fluid {
+    transition: transform 0.3s;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+
+h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.btn {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0, 86, 179, 0.5);
+}
+.suggested-books .card {
+    height: 100%;
+}
+
+.suggested-books .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+.book-detail-container {
+    margin-top: 100px;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.col-md-6 {
+    padding: 15px;
+}
+
+h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+.fixed-size-image {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+
+.suggested-books .card {
+    height: 100%;
+    transition: transform 0.3s;
+}
+
+.suggested-books .card:hover {
+    transform: scale(1.02);
+}
+
+.suggested-books .card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.suggested-books .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.suggested-books .btn {
+    width: 100%;
+}
+
+.suggested-books .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+
