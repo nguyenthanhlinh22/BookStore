@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Payment Page</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<h2>Payment for Your Order</h2>
+
+<div class="order-summary">
+  <h3>Order Summary</h3>
+  <table>
+    <thead>
+    <tr>
+      <th>Book</th>
+      <th>Quantity</th>
+      <th>Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="book : ${order.books}">
+      <td th:text="${book.title}">Book Title</td>
+      <td th:text="${book.quantity}">1</td>
+      <td th:text="${book.price}">$10.00</td>
+    </tr>
+    </tbody>
+  </table>
+  <p>Total: <span th:text="${order.totalAmount}">$50.00</span></p>
+</div>
+
+<form action="/process-payment" method="POST">
+  <div class="form-group">
+    <label for="cardNumber">Card Number</label>
+    <input type="text" id="cardNumber" name="cardNumber" placeholder="Enter your card number" required />
+  </div>
+
+  <div class="form-group">
+    <label for="cardHolder">Card Holder</label>
+    <input type="text" id="cardHolder" name="cardHolder" placeholder="Enter cardholder's name" required />
+  </div>
+
+  <div class="form-group">
+    <label for="expiryDate">Expiry Date</label>
+    <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required />
+  </div>
+
+  <div class="form-group">
+    <label for="cvv">CVV</label>
+    <input type="text" id="cvv" name="cvv" placeholder="Enter CVV" required />
+  </div>
+
+  <button type="submit">Pay Now</button>
+</form>
+</body>
+</html>

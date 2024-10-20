@@ -4,11 +4,8 @@ plugins {
     id 'io.spring.dependency-management' version '1.1.6'
 }
 
-<<<<<<< HEAD
 group = 'com.example'
-=======
-group = 'org.example'
->>>>>>> ee3dd3cbc49810b567468ac7465f172e4db8241d
+        group = 'org.example'
 version = '0.0.1-SNAPSHOT'
 
 java {
@@ -17,15 +14,12 @@ java {
     }
 }
 
-<<<<<<< HEAD
-=======
-configurations {
-    compileOnly {
-        extendsFrom annotationProcessor
-    }
-}
+        configurations {
+            compileOnly {
+                extendsFrom annotationProcessor
+            }
+        }
 
->>>>>>> ee3dd3cbc49810b567468ac7465f172e4db8241d
 repositories {
     mavenCentral()
 }
@@ -34,21 +28,20 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-<<<<<<< HEAD
+
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     implementation 'org.springframework.boot:spring-boot-starter-security'
     runtimeOnly 'com.mysql:mysql-connector-j'
     implementation 'org.thymeleaf.extras:thymeleaf-extras-springsecurity6:3.1.2.RELEASE'
 
+    implementation 'com.stripe:stripe-java:22.0.0'
 
-=======
-    compileOnly 'org.projectlombok:lombok'
+            compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.mysql:mysql-connector-j'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
->>>>>>> ee3dd3cbc49810b567468ac7465f172e4db8241d
 }
 
 tasks.named('test') {
